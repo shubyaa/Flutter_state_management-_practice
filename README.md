@@ -22,7 +22,7 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 [![Dart](https://img.shields.io/badge/Dart-3.0.5-blue.svg?logo=dart&logoColor=white)](https://dart.dev/)
 
 
-[![Bloc](https://img.shields.io/bloc/v/flutter_bloc.svg)](https://pub.dev/packages/flutter_bloc)
+[![Bloc](https://img.shields.io/pub/v/flutter_bloc.svg)](https://pub.dev/packages/flutter_bloc)
 
 [![Platform Support](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-blue.svg)](https://flutter.dev/docs/development/platform-integration/platform-support)
 
