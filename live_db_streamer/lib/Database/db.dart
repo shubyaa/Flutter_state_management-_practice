@@ -1,14 +1,17 @@
 import 'dart:async';
 
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:mongo_dart/mongo_dart.dart';
 
 class DatabaseMongo {
+  String url;
+  DatabaseMongo({required this.url});
   static var db, userCollection;
   static String USER_COLLECTION = "users";
 
   static connect() async {
-    db = await Db.create(
-        "mongodb+srv://shubhped:8451841454aA%40@cluster0.ej3rhfh.mongodb.net/test");
+    await dotenv.load();
+    db = await Db.create(dotenv.get('MONGO_URL'));
     await db.open();
     userCollection = db.collection(USER_COLLECTION);
   }
@@ -18,6 +21,5 @@ class DatabaseMongo {
     return users;
   }
 }
-
 
 // mongodb+srv://shubhped:8451841454aA%40@cluster0.ej3rhfh.mongodb.net/test

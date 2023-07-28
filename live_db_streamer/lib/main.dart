@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:live_db_streamer/Database/db.dart';
 import 'package:live_db_streamer/Features/home/ui/first_screen.dart';
 
-void main() async {
+Future<void> main() async {
+  await dotenv.load();
   WidgetsFlutterBinding.ensureInitialized();
   await DatabaseMongo.connect();
   runApp(const MyApp());
