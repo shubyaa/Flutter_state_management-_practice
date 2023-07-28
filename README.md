@@ -10,6 +10,7 @@ Because it could magically manage all the states without pulling a single rabbit
 
 ### Not a Rockect Science But, I can manage my states now!
 
+P.S. : You may not see the fun at the output, but the twist is the architecture and state management used, go through my repository. Still confused? Get yourself focused on [Bloc State Management](https://pub.dev/packages/flutter_bloc)
 
 ## Badges
 
@@ -21,7 +22,7 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 [![Dart](https://img.shields.io/badge/Dart-3.0.5-blue.svg?logo=dart&logoColor=white)](https://dart.dev/)
 
 
-[![Pub Version](https://img.shields.io/pub/v/pub_semver.svg)](https://pub.dev/packages/pub_semver)
+[![Bloc](https://img.shields.io/pub/v/flutter_bloc.svg)](https://pub.dev/packages/flutter_bloc)
 
 [![Platform Support](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-blue.svg)](https://flutter.dev/docs/development/platform-integration/platform-support)
 
@@ -34,6 +35,8 @@ To run this project, you will need to add the following environment variables to
 ## Demo
 
 ![Output File](https://github.com/shubyaa/Flutter_state_management-_practice/blob/master/output/ezgif.com-video-to-gif%20(2).gif)
+
+
 ## 🚀 About Me
 ### I'm a freelancer and also a developer who can develop :
 - Mobile Applications
