@@ -11,7 +11,8 @@ class DatabaseMongo {
 
   static connect() async {
     await dotenv.load();
-    db = await Db.create(dotenv.get('MONGO_URL'));
+    db = await Db.create(
+        dotenv.get('MONGO_URL')); // Add your own Database Mongo Url here.
     await db.open();
     userCollection = db.collection(USER_COLLECTION);
   }
