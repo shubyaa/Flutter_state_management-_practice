@@ -19,6 +19,7 @@ class _FirstScreenState extends State<FirstScreen> {
   @override
   void initState() {
     homeBloc.add(HomeInitialEvent());
+    // This is initial state invocation where you can liftup your state and execut it's bloc operation to emit other states
     super.initState();
   }
 
@@ -31,20 +32,12 @@ class _FirstScreenState extends State<FirstScreen> {
           listenWhen: (previous, current) => current is HomeActionState,
           buildWhen: (previous, current) => current is! HomeActionState,
           listener: (context, state) {
-            if (state is HomeActionState) {
-              print("Yes");
-            }
             if (state is HomeNavigateToSecondScreenState) {
-              print("I navigated to second");
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const SecondScreen()),
               );
             }
-            if (state is HomeLoadingState) {
-              print("The Data is Loading");
-            }
-            // Add more conditions for other state types if needed
           },
           builder: (context, state) {
             switch (state.runtimeType) {

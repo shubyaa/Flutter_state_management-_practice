@@ -35,6 +35,5 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   FutureOr<void> homeNavigateToSecondScreenEvent(
       HomeNavigateToSecondScreenEvent event, Emitter<HomeState> emit) {
     emit(HomeNavigateToSecondScreenState());
-    print('Navigate clicked');
   }
 }
