@@ -22,5 +22,3 @@ class DatabaseMongo {
     return users;
   }
 }
-
-// mongodb+srv://shubhped:8451841454aA%40@cluster0.ej3rhfh.mongodb.net/test
